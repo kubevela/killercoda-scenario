@@ -1,0 +1,26 @@
+{
+    "title": "Deploy First Application with KubeVela",
+    "description": "Welcome to KubeVela! This scenario will guide you to deliver your first app.",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Install",
+          "text": "step1.md"
+        },
+        {
+          "title": "Deploy First Application",
+          "text": "step2.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  
