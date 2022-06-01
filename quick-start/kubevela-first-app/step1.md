@@ -2,7 +2,7 @@
 
 This is quite easy. Depends on your system, run one of scripts below.
 
-RUN `curl -fsSl https://kubevela.io/script/install.sh | bash -s 1.3.4`{{exec}}
+RUN `curl -fsSl https://kubevela.io/script/install.sh | bash -s 1.4.0`{{exec}}
 
 After install, you can run `vela version` to check vela CLI installed
 
@@ -14,7 +14,7 @@ RUN `vela install`{{exec}}
 
 ### Install VelaUX
 
-RUN `vela addon enable velaux --version v1.3.4`{{exec}}
+RUN `vela addon enable velaux --version v1.4.0`{{exec}}
 
 By default, velaux didn't have any exposed port, you can view it by:
 
@@ -24,8 +24,6 @@ By default, velaux didn't have any exposed port, you can view it by:
 
 Choose `> Cluster: local | Namespace: vela-system | Component: velaux | Kind: Service` for visit.
 
-[ACCESS VELAUX]({{TRAFFIC_HOST1_8080}})
+You can visit velaux by this dynamically rendered [endpoint]({{TRAFFIC_HOST1_8080}}).
 
-`vela logs -n vela-system --name apiserver addon-velaux | grep "initialized admin username"`{{exec}}
-
-If there is no password in logs, you can get it from secret with the name admin in the vela-system namespace.
+The default username and password is: `admin` and `VelaUX12345`.

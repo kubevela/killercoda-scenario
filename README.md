@@ -2,8 +2,9 @@
 
 KubeVela Interactive environments, You can learn to use KubeVela in your browser.
 
-This courses power by [Killercoda](https://killercoda.com)
+The Current experience url is: https://killercoda.com/839c24ab-86c6-49ee-a3d7-55cdbe64d705 .
 
-More example in here:  https://github.com/killercoda/scenario-examples
+* Course contribution documentation: https://killercoda.com/creators
+* More example in here:  https://github.com/killercoda/scenario-examples
 
-Documentation: https://killercoda.com/creators
+All these resources are powered by [Killercoda](https://killercoda.com).
