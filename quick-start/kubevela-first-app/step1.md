@@ -2,7 +2,7 @@
 
 This is quite easy. Depends on your system, run one of scripts below.
 
-RUN `curl -fsSl https://kubevela.io/script/install.sh | bash -s 1.4.0`{{exec}}
+RUN `curl -fsSl https://kubevela.io/script/install.sh | bash -s 1.7.6`{{exec}}
 
 After install, you can run `vela version` to check vela CLI installed
 
@@ -14,7 +14,7 @@ RUN `vela install`{{exec}}
 
 ### Install VelaUX
 
-RUN `vela addon enable velaux --version v1.4.0`{{exec}}
+RUN `vela addon enable velaux --version v1.7.6`{{exec}}
 
 By default, velaux didn't have any exposed port, you can view it by:
 

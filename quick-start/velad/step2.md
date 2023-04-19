@@ -22,11 +22,9 @@ velad status
 
 You could use vela CLI now. try check all available component types. Later we'll use `webservice` type component when deploying first app
 
-```
-# optional because `velad install` create default cluster
-export KUBECONFIG=$(velad kubeconfig --host)
-```{{exec}}
+### Verify Installation
 
 ```
+export KUBECONFIG=$(velad kubeconfig --host)
 vela comp
 ```{{exec}}
