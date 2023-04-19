@@ -1,0 +1,34 @@
+{
+    "title": "Setup KubeVela and deliver your first app",
+    "description": "VelaD can help you set up KubeVela on your computer",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "Install VelaD",
+          "text": "step1.md"
+        },
+        {
+          "title": "Use VelaD to setup KubeVela",
+          "text": "step2.md"
+        },
+        {
+          "title": " Install VelaUX",
+          "text": "step3.md"
+        },
+        {
+          "title": "Deliver your first app",
+          "text": "step4.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "ubuntu"
+    }
+  }
+  
