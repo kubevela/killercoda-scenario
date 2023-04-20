@@ -117,15 +117,13 @@ After finished the installation of VelaUX, you can view and manage the applicati
 
 * Port forward the UI if you don't have endpoint for access:
 
-```
-vela port-forward addon-velaux -n vela-system 8080:80
-```{{exec}}
+`vela port-forward addon-velaux -n vela-system 8080:80 --address='0.0.0.0'`{{exec}}
 
-* Check the password by:
+>Warning: `--address='0.0.0.0'` is just to adapt to the [killercoda.com](https://github.com/killercoda/scenario-examples/blob/main/network-traffic/step1.md) platform and is not a requirement!
 
-```
-vela logs -n vela-system --name apiserver addon-velaux | grep "initialized admin username"
-```{{exec}}
+Choose `> Cluster: local | Namespace: vela-system | Component: velaux | Kind: Service` for visit.
+
+You can visit velaux by this dynamically rendered [endpoint]({{TRAFFIC_HOST1_8080}}).
 
 * Check the resources deployed
 
