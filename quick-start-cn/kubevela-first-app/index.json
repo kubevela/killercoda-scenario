@@ -1,0 +1,26 @@
+{
+    "title": "使用 KubeVela 部署第一个应用程序",
+    "description": "欢迎来到 KubeVela! 本方案将指导你部署你的第一个应用程序。",
+    "details": {
+      "intro": {
+        "text": "intro.md"
+      },
+      "steps": [
+        {
+          "title": "安装",
+          "text": "step1.md"
+        },
+        {
+          "title": "部署第一个应用程序",
+          "text": "step2.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+  }
+  
