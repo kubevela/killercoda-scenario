@@ -1,25 +1,25 @@
 {
-    "title": "Quickly running KubeVela with VelaD",
-    "description": "VelaD can help you set up KubeVela on your computer",
+    "title": "使用 VelaD 快速运行 KubeVela",
+    "description": "VelaD 可以帮助你在你的电脑上快速运行 KubeVela",
     "details": {
       "intro": {
         "text": "intro.md"
       },
       "steps": [
         {
-          "title": "Install VelaD",
+          "title": "安装 VelaD",
           "text": "step1.md"
         },
         {
-          "title": "Use VelaD to setup KubeVela",
+          "title": "试用 VelaD 设置 KubeVela",
           "text": "step2.md"
         },
         {
-          "title": " Install VelaUX",
+          "title": " 安装 VelaUX",
           "text": "step3.md"
         },
         {
-          "title": "Deliver your first app",
+          "title": "部署第一个应用",
           "text": "step4.md"
         }
       ],
