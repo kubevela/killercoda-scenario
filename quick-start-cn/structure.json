@@ -1,8 +1,7 @@
 {
-    "title": "Quick Start",
-    "description": "Welcome to KubeVela! This course will guide you to deliver your first app.",
+    "title": "快速开始",
+    "description": "欢迎来到KubeVela! 本课程将指导你交付你的第一个应用程序。",
     "items": [
-      { "path": "kubevela-first-app" },
-      { "path": "velad" }
+      { "path": "kubevela-first-app" }
     ]
   }
