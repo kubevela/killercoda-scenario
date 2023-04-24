@@ -1,6 +1,7 @@
 {
     "items": [
       { "path": "quick-start" },
-      { "path": "quick-start-cn" }
+      { "path": "quick-start-cn" },
+      { "path": "cd" }
     ]
   }

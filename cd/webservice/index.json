@@ -1,0 +1,27 @@
+{
+    "title": "Deploy Container Image",
+    "description": "In this scenario, we will introduce how to deploy a container-based application with KubeVela.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "foreground": "foreground.sh",
+        "background": "background.sh"
+      },
+      "steps": [
+        {
+          "title": "Deploying with UI",
+          "text": "step1.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    },
+    "interface": {
+      "layout": "ide"
+    }
+  }
+  
