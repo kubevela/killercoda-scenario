@@ -1,6 +1,6 @@
 {
     "title": "Quick Start",
-    "description": "Welcome to KubeVela! This course will guide you to deliver your first app.",
+    "description": "Welcome to KubeVela! This course will guide you through the KubeVela project.",
     "items": [
       { "path": "kubevela-first-app" },
       { "path": "velad" }
