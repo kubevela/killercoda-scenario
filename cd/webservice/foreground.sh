@@ -4,7 +4,7 @@ echo DONE
 
 echo "Installing KubeVela..."
 curl -fsSl https://kubevela.io/script/install.sh | bash -s 1.7.6
-vela install
+vela install -y
 echo DONE
 
 echo "Installing VelaUX..."
