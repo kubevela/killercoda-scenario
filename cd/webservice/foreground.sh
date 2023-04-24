@@ -1,5 +1,5 @@
 echo "Installing scenario..."
-while [ ! -f /tmp/kubevela ]; do sleep 1; done
+while [ ! -f /tmp/webservice-app.yaml ]; do sleep 1; done
 echo DONE
 
 echo "Installing KubeVela..."
