@@ -31,7 +31,7 @@ Services:
 Depending on how you install KubeVela, you can choose the way to access the [endpoint]({{TRAFFIC_HOST1_8080}}).
 
 ```shell
-vela port-forward webservice-app -n default 8080:8080
+vela port-forward webservice-app -n default 8080:8080 --address='0.0.0.0'
 ```{{exec}}
 
 This command will open a browser automatically. Or you could access the endpoint by [URL]({{TRAFFIC_HOST1_8080}}) in your browser.
