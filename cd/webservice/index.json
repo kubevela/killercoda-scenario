@@ -11,6 +11,10 @@
         {
           "title": "Deploying with UI",
           "text": "step1.md"
+        },
+        {
+          "title": "Deploy via CLI",
+          "text": "step1.md"
         }
       ],
       "finish": {
