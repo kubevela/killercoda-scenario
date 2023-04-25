@@ -1,0 +1,31 @@
+{
+    "title": "Canary Rollout",
+    "description": "In this scenario, we will introduce how to canary rollout a container service with KubeVela.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "foreground": "foreground.sh",
+        "background": "background.sh"
+      },
+      "steps": [
+        {
+          "title": "Canary Rollout via CLI",
+          "text": "step1.md"
+        },
+        {
+          "title": "Canary Rollout via UI",
+          "text": "step2.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    },
+    "interface": {
+      "layout": "ide"
+    }
+  }
+  
