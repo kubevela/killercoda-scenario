@@ -3,11 +3,12 @@
 # echo DONE
 
 echo "Installing KubeVela..."
-curl -fsSl https://kubevela.io/script/install.sh | bash -s 1.7.6
+curl -fsSl https://kubevela.io/script/install.sh | bash -s 1.8.0
 vela install -y
 echo DONE
 
 echo "Installing VelaUX..."
-vela addon enable velaux --version v1.7.6
+vela addon enable velaux --version v1.8.0
+vela addon enable fluxcd
 vela addon enable ingress-nginx serviceType=NodePort
 echo DONE
