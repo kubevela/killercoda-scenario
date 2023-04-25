@@ -56,6 +56,7 @@ If you have enabled [velaux](https://kubevela.io/zh/docs/reference/addons/velaux
 
 RUN `vela status addon-ingress-nginx -n vela-system --endpoint`{{exec}}
 
+
 `curl -H "Host: canary-demo.com" <endpoint>/version`
 
 ## Day-2 Canary Release
