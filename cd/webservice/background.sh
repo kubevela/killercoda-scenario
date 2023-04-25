@@ -8,7 +8,7 @@ echo starting... # to test stdout output in /var/log/killercoda
 
 # touch /tmp/kubevela
 
-cat <<EOF >> /tmp/webservice-app.yaml
+cat <<EOF >> /webservice-app.yaml
 # YAML begins
 apiVersion: core.oam.dev/v1beta1
 kind: Application

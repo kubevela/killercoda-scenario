@@ -9,11 +9,11 @@
       },
       "steps": [
         {
-          "title": "Deploying with UI",
+          "title": "Deploy via CLI",
           "text": "step1.md"
         },
         {
-          "title": "Deploy via CLI",
+          "title": "Deploy via UI (VelaUX)",
           "text": "step2.md"
         }
       ],
