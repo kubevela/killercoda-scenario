@@ -1,0 +1,14 @@
+{
+    "title": "KubeVela Playground",
+    "description": "Play with KubeVela.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "foreground": "foreground.sh"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1nodes"
+    }
+  }
+  

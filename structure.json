@@ -1,5 +1,6 @@
 {
     "items": [
+      { "path": "playground" },
       { "path": "quick-start" },
       { "path": "quick-start-cn" },
       { "path": "cd" }
