@@ -2,6 +2,7 @@
     "title": "Continuous Delivery",
     "description": "Deliver applications quickly with KubeVela.",
     "items": [
-      { "path": "webservice" }
+      { "path": "webservice" },
+      { "path": "rollout" }
     ]
   }
