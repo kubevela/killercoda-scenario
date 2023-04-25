@@ -54,9 +54,9 @@ If you have enabled [velaux](https://kubevela.io/zh/docs/reference/addons/velaux
 
 > The host `canary-demo.com` is aligned with the `gateway` trait in your application, you can also configure it in your `/etc/hosts` to use the host url for visiting.
 
-RUN `vela status addon-ingress-nginx -n vela-system --endpoint`{{exec}}
+> Get endpoint of ingress `vela status addon-ingress-nginx -n vela-system --endpoint`{{exec}}
 
-`curl -H "Host: canary-demo.com" 172.30.1.2:<endpoint>/version`
+RUN `curl -H "Host: canary-demo.com" 172.30.1.2:$(kubectl get svc -n vela-system nginx-ingress-ingress-nginx-controller  -o jsonpath='{.spec.ports[0].nodePort}')/version`{{exec}}
 
 ## Day-2 Canary Release
 
@@ -130,11 +130,11 @@ RUN `vela workflow resume canary-demo`{{exec}}
 
 Access the gateway endpoint again multi times. You will find out the chance (`50%`) to meet result `Demo: v2` is highly increased.
 
-Get endpoint of ingress `vela status addon-ingress-nginx -n vela-system --endpoint`{{exec}}
+> Get endpoint of ingress `vela status addon-ingress-nginx -n vela-system --endpoint`{{exec}}
 
 `kubectl get svc -n vela-system addon-ingress-nginx -o jsonpath='{.spec.ports[0].nodePort}'`{{exec}}
 
-RUN `curl -H "Host: canary-demo.com" 172.30.1.2:<endpoint>/version`
+RUN `curl -H "Host: canary-demo.com" 172.30.1.2:$(kubectl get svc -n vela-system nginx-ingress-ingress-nginx-controller  -o jsonpath='{.spec.ports[0].nodePort}')/version`{{exec}}
 
 View topology graph again, you will see the workload updated 3 replicas to `v2`, and this pod will serve the canary traffic. Meanwhile, 2 pods of `v1` are still running and server non-canary traffic.
 
@@ -148,9 +148,9 @@ RUN `vela workflow resume canary-demo`{{exec}}
 
 Access the gateway endpoint again multi times. You will find out the result always is `Demo: v2`.
 
-Get endpoint of ingress `vela status addon-ingress-nginx -n vela-system --endpoint`{{exec}}
+> Get endpoint of ingress `vela status addon-ingress-nginx -n vela-system --endpoint`{{exec}}
 
-RUN `curl -H "Host: canary-demo.com" 172.30.1.2:<endpoint>/version`
+RUN `curl -H "Host: canary-demo.com" 172.30.1.2:$(kubectl get svc -n vela-system nginx-ingress-ingress-nginx-controller  -o jsonpath='{.spec.ports[0].nodePort}')/version`{{exec}}
 
 ## Canary verification failed, rollback the release
 
@@ -166,6 +166,8 @@ Successfully rollback rolloutApplication outdated revision cleaned up.
 
 Access the gateway endpoint again. You can see the result is always `Demo: V1`.
 
-RUN `curl -H "Host: canary-demo.com" <ingress-controller-address>/version`{{exec}}
+> Get endpoint of ingress `vela status addon-ingress-nginx -n vela-system --endpoint`{{exec}}
+
+RUN `curl -H "Host: canary-demo.com" 172.30.1.2:$(kubectl get svc -n vela-system nginx-ingress-ingress-nginx-controller  -o jsonpath='{.spec.ports[0].nodePort}')/version`{{exec}}
 
 Any rollback operation in middle of a runningWorkflow will rollback to the latest succeeded revision of this application. So, if you deploy a successful `v1` and upgrade to `v2`, but this version didn't succeed while you continue to upgrade to `v3`. The rollback of `v3` will automatically to `v1`, because release `v2` is not a succeeded one.
