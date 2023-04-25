@@ -11,7 +11,7 @@
       }
     },
     "backend": {
-      "imageid": "kubernetes-kubeadm-1node"
+      "imageid": "kubernetes-cluster-running:1.21"
     }
   }
   
