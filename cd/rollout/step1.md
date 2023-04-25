@@ -3,7 +3,7 @@
 Enable [`kruise-rollout`](https://kubevela.io/docs/reference/addons/kruise-rollout) addon, our canary rollout capability relies on the [rollouts from OpenKruise](https://github.com/openkruise/rollouts).
 
 ```
-vela addon enable kruise-rollout
+vela addon enable kruise-rollout -y
 ```{{exec}}
 
 ## First Time Deploy
@@ -48,9 +48,17 @@ Services:
 
 If you have enabled [velaux](https://kubevela.io/zh/docs/reference/addons/velaux) addon, you can view the application topology graph that all `v1` pods are ready now.
 
-> RUN `vela port-forward addon-velaux -n vela-system 8080:80 --address='0.0.0.0' -c velaux`{{exec}} and visit velaux in this [URL]({{TRAFFIC_HOST1_8080}}).
+> RUN `vela port-forward addon-velaux -n vela-system 8080:80 --address='0.0.0.0' -c velaux`{{exec}} and visit velaux in this [URL]({{TRAFFIC_HOST1_8080}}/applications/canary-demo/envbinding/default/status). The default username and password is: `admin` and `VelaUX12345`.
 
 ![image](https://kubevela.io/zh/assets/images/kruise-rollout-v1-f4145e9ba5d3ce683a6594796cc1591a.jpg)
+
+> The host `canary-demo.com` is aligned with the `gateway` trait in your application, you can also configure it in your `/etc/hosts` to use the host url for visiting.
+
+RUN `vela status addon-ingress-nginx -n vela-system --endpoint`{{exec}}
+
+```
+curl -H "Host: canary-demo.com" <ingress-controller-address>/version
+```
 
 ## Day-2 Canary Release
 

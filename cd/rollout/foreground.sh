@@ -9,5 +9,5 @@ echo DONE
 
 echo "Installing VelaUX..."
 vela addon enable velaux --version v1.7.6
-vela addon enable ingress-controller
+vela addon enable ingress-nginx serviceType=NodePort
 echo DONE
