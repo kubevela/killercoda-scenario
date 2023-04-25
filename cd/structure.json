@@ -3,6 +3,7 @@
     "description": "Deliver applications quickly with KubeVela.",
     "items": [
       { "path": "webservice" },
-      { "path": "rollout" }
+      { "path": "rollout" },
+      { "path": "sidecar" }
     ]
   }

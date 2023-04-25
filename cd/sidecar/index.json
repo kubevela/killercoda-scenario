@@ -1,0 +1,24 @@
+{
+    "title": "Attaching Sidecar Container",
+    "description": "In this scenario, we will introduce how to attach a sidecar container to the component with KubeVela.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "foreground": "foreground.sh",
+        "background": "background.sh"
+      },
+      "steps": [
+        {
+          "title": "Attaching Sidecar Container",
+          "text": "step1.md"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node"
+    }
+  }
+  
